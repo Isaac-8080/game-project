@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group-1-project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  
+  <div class="bg-[#5E63BA] h-[100dvh] w-[100%] flex flex-col items-center justify-center">
+
+    <div class="flex flex-row items-center justify-center">
+      
+      <div class="relative flex flex-col justify-between p-5 md:p-20 gap-5 md:h-[400px] w-[100%] md:w-[600px] bg-[#FFFFFF] rounded-lg">
+
+        <div class="flex flex-row items-center justify-between">
+          <div class="flex flex-col items-center">
+            <label for="playerCounter">Player</label>
+            <p id="playerCounter" class="font-bold text-[20px] bg-[#5E63BA] p-3 rounded-full text-[#FFFFFF] mt-1">0</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <label for="computerCounter">Computer</label>
+            <p id="computerCounter" class="font-bold text-[20px] bg-[#5E63BA] p-3 rounded-full text-[#FFFFFF] mt-1">0</p>
+          </div>
+        </div>
+        <div class="flex flex-row items-center justify-between">
+          <p id="player-result">Player choice: </p>
+          <p id="computer-result">Computer choice: </p>
+        </div>
+        <p id="game-result" class="text-center"></p>
+      
+        <div class="flex flex-row items-center justify-center md:gap-20">
+          <img src="icons8-rock-96.png" alt="Rock" class="choice-img hover:bg-[lightgray] p-2 rounded-full ease-in-out duration-300 cursor-pointer" data-choice="rock">
+          <img src="icons8-paper-100.png" alt="Paper" class="choice-img hover:bg-[lightgray] p-2 rounded-full ease-in-out duration-300 cursor-pointer" data-choice="paper">
+          <img src="icons8-scissors-100.png" alt="Scissors" class="choice-img hover:bg-[lightgray] p-2 rounded-full ease-in-out duration-300 cursor-pointer" data-choice="scissors">
+        </div>
+
+      </div>
+
+      <div id="finalResult" class="absolute flex flex-col items-center gap-5 md:h-[400px] w-[100%] md:w-[600px] bg-[#FFFFFF] p-20 rounded-lg hidden">
+
+        <img id="img" src="" alt="" srcset="" class="w-[150px]">
+
+        <p id="popupText" class="font-bold text-[20px]"></p>
+
+        <input type="button" value="Play Again?" id="replyBtn" class="bg-[#000000] hover:bg-[#5E63BA] ease-in-out duration-500 text-[#FFFFFF] py-3 px-5 font-bold rounded cursor-pointer">
+        
+      </div>
+
+    </div>
+
+
+  </div>
+  
+  
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
