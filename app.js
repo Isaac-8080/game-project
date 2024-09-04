@@ -87,7 +87,7 @@ for (let i = 0; i < getImages.length; i++) {
         
         getPopupText.textContent = 'Draw game!';
 
-        getPopupText.classList.add('text-[yellow]');
+        getPopupText.classList.add('text-[black]');
 
       } else {
         
